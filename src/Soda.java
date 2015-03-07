@@ -6,7 +6,7 @@ public class Soda {
 	// constructor
 	Soda(int n) {
 		name = n;
-		price = n*33%10+2;
+		price = n * 33 % 10 + 2;
 	}
 
 	// am
@@ -30,6 +30,6 @@ public class Soda {
 	// toString()
 	@Override
 	public String toString() {
-		return "Soda Brand #"+name + "\n\tPrice: " + price;
+		return "Soda Brand #" + name + "\n\tPrice: " + price;
 	}
 }

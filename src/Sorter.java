@@ -7,11 +7,11 @@ public class Sorter {
 		sodas = s;
 	}
 
-	// am
 	// Methods
-	public void sortSodas(){
-		quickSort(sodas, 0, sodas.length-1);
+	public void sortSodas() {
+		quickSort(sodas, 0, sodas.length - 1);
 	}
+
 	public static void quickSort(Soda[] array, int left, int right) {
 		int index = partition(array, left, right);
 		if (left < index - 1) {
@@ -50,12 +50,13 @@ public class Sorter {
 		array[ind1] = array[ind2];
 		array[ind2] = temp;
 	}
+
 	// toString()
 	@Override
-	public String toString(){
+	public String toString() {
 		String res = "";
-		for(Soda s: sodas){
-			res+=s + "\n";
+		for (Soda s : sodas) {
+			res += s + "\n";
 		}
 		return res;
 	}
